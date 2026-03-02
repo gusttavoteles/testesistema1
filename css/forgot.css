@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "TikTok Sans", sans-serif;
+    background: linear-gradient(135deg, #0B1F35, #0E2A47, #123B63);
+    display: flex;
+    justify-content: center; /* Centralizar todos os elementos da pagina/body */
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-size: 400% 400%;
+    animation: fundoAnimado 4s ease infinite;
+}
+@keyframes fundoAnimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.login-container{
+    background-color: #ffffff; /* cor do fundo do container*/
+    color: #0B1F35; /* cor da fonte*/
+    border-radius: 14px;
+    width: 100%; /* ocupar 100% do espaço da largura*/
+    max-width: 380px; /* limitar a largura a 380px*/
+    padding: 30px 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+.logo{
+    height: auto; /* altura da logo auto para nao esticar e  acompanhar a largura*/
+    width: 200px;    /* largura da logo*/
+    border-radius: 20px; /* borda bonitinha*/
+    margin: 0 auto 20px;
+    display: block;
+    
+}
+h1{
+    margin-bottom: 8px;
+    color: #0E2A47;
+    font-size: 20px;
+}
+p{
+    margin-bottom: 10px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 0.5px solid #ddd;
+    font-size: 15px;
+}
+
+input:focus{
+    border-color: #10B981;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    border: 0.5px;
+}
+
+button[type="submit"]{
+    background-color: #10db98;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #1aa778;
+}
+
+.forgot{ /* o esqueceu senha*/
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+        
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
